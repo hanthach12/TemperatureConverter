@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="pane1" fx:id="" maxHeight="350.0" maxWidth="900.0" prefHeight="350.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="textField1" alignment="CENTER" layoutX="33.0" layoutY="77.0" onKeyTyped="#celsiusToFahrenheit" prefHeight="65.0" prefWidth="300.0">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font></TextField>
+      <ComboBox fx:id="leftComBox" layoutX="33.0" layoutY="141.0" onAction="#comBox1TemperatureDegreeChoice" prefHeight="25.0" prefWidth="300.0" />
+      <TextField fx:id="textField2" alignment="CENTER" layoutX="367.0" layoutY="77.0" prefHeight="65.0" prefWidth="300.0">
+         <font>
+            <Font name="Calibri" size="36.0" />
+         </font></TextField>
+      <ComboBox fx:id="rightComBox" layoutX="367.0" layoutY="141.0" onAction="#comBox2TemperatureDegreeChoice" prefHeight="25.0" prefWidth="300.0" />
+      <Text fx:id="equalSign" layoutX="333.0" layoutY="136.0" opacity="0.4" strokeType="OUTSIDE" strokeWidth="0.0" text="=" textAlignment="CENTER" wrappingWidth="34.13671875">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Text>
+      <Text fx:id="theFormula" layoutX="112.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="245.826171875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="formulaIndicator" alignment="CENTER" layoutX="33.0" layoutY="176.0" prefHeight="20.0" prefWidth="58.0" style="-fx-background-color: F9AE09;" text="Formula" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
